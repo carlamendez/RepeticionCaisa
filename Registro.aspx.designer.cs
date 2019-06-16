@@ -40,13 +40,22 @@ namespace Caisa {
         protected global::System.Web.UI.WebControls.TextBox txtemail;
         
         /// <summary>
-        /// lblerror control.
+        /// requiereemail control.
         /// </summary>
         /// <remarks>
         /// Auto-generated field.
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
-        protected global::System.Web.UI.WebControls.Label lblerror;
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiereemail;
+        
+        /// <summary>
+        /// textoemail control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator textoemail;
         
         /// <summary>
         /// lblusuario control.
@@ -67,6 +76,24 @@ namespace Caisa {
         protected global::System.Web.UI.WebControls.TextBox txtusuario;
         
         /// <summary>
+        /// requiereusuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiereusuario;
+        
+        /// <summary>
+        /// letrasusuario control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator letrasusuario;
+        
+        /// <summary>
         /// lblpass control.
         /// </summary>
         /// <remarks>
@@ -83,6 +110,15 @@ namespace Caisa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtpass;
+        
+        /// <summary>
+        /// requierecontrasena control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requierecontrasena;
         
         /// <summary>
         /// lblconfpass control.
@@ -103,6 +139,24 @@ namespace Caisa {
         protected global::System.Web.UI.WebControls.TextBox txtconfpass;
         
         /// <summary>
+        /// requiereconfirmar control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiereconfirmar;
+        
+        /// <summary>
+        /// compararcontrasena control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.CompareValidator compararcontrasena;
+        
+        /// <summary>
         /// lblnombre control.
         /// </summary>
         /// <remarks>
@@ -119,6 +173,24 @@ namespace Caisa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtnombre;
+        
+        /// <summary>
+        /// requierenombre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requierenombre;
+        
+        /// <summary>
+        /// textonombre control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator textonombre;
         
         /// <summary>
         /// lblpaterno control.
@@ -139,6 +211,24 @@ namespace Caisa {
         protected global::System.Web.UI.WebControls.TextBox txtpaterno;
         
         /// <summary>
+        /// requierepaterno control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requierepaterno;
+        
+        /// <summary>
+        /// textopaterno control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator textopaterno;
+        
+        /// <summary>
         /// lblmaterno control.
         /// </summary>
         /// <remarks>
@@ -155,6 +245,24 @@ namespace Caisa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtmaterno;
+        
+        /// <summary>
+        /// requierematerno control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requierematerno;
+        
+        /// <summary>
+        /// textomaterno control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator textomaterno;
         
         /// <summary>
         /// lblnacimiento control.
@@ -175,6 +283,24 @@ namespace Caisa {
         protected global::System.Web.UI.WebControls.TextBox txtnacimiento;
         
         /// <summary>
+        /// requierenacimiento control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requierenacimiento;
+        
+        /// <summary>
+        /// textonacimiento control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RegularExpressionValidator textonacimiento;
+        
+        /// <summary>
         /// lblEdad control.
         /// </summary>
         /// <remarks>
@@ -191,6 +317,15 @@ namespace Caisa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.TextBox txtedad;
+        
+        /// <summary>
+        /// requiereedad control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requiereedad;
         
         /// <summary>
         /// lbldireccion control.
@@ -211,6 +346,15 @@ namespace Caisa {
         protected global::System.Web.UI.WebControls.TextBox txtdireccion;
         
         /// <summary>
+        /// requieredireccion control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requieredireccion;
+        
+        /// <summary>
         /// lbltelefono control.
         /// </summary>
         /// <remarks>
@@ -229,6 +373,15 @@ namespace Caisa {
         protected global::System.Web.UI.WebControls.TextBox txttelefono;
         
         /// <summary>
+        /// requieretelefono control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.RequiredFieldValidator requieretelefono;
+        
+        /// <summary>
         /// btnregistrar control.
         /// </summary>
         /// <remarks>
@@ -245,5 +398,14 @@ namespace Caisa {
         /// To modify move field declaration from designer file to code-behind file.
         /// </remarks>
         protected global::System.Web.UI.WebControls.Button btncancelar;
+        
+        /// <summary>
+        /// valSum control.
+        /// </summary>
+        /// <remarks>
+        /// Auto-generated field.
+        /// To modify move field declaration from designer file to code-behind file.
+        /// </remarks>
+        protected global::System.Web.UI.WebControls.ValidationSummary valSum;
     }
 }

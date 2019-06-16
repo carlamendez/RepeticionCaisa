@@ -22,7 +22,7 @@ namespace Caisa
         }
         private void CargarInfoUsuario()
         {
-            lblnombre.Text = LoginCache.usuario;
+            lblnombre.Text = datos.nombre + " "+datos.paterno+" "+datos.materno;
             lbledadu.Text = datos.edad.ToString();
         }
 

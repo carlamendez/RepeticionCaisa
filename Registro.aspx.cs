@@ -1,4 +1,5 @@
 ﻿using BusinessCaisa;
+using commons;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -26,27 +27,16 @@ namespace Caisa
                 EntitiesCaisa ec = new EntitiesCaisa();
 
                 ec.email = txtemail.Text;
-                ec.usuario = txtusuario.Text;
-                ec.contrasena = txtpass.Text;
+                ec.usuario =Seguridad.Encriptar(txtusuario.Text);
+                ec.contrasena =Seguridad.Encriptar(txtpass.Text);
                 ec.confirmarcontrasena = txtconfpass.Text;
-                ec.nombre = txtnombre.Text;
-                ec.paterno = txtpaterno.Text;
-                ec.materno = txtmaterno.Text;
+                ec.nombre =Seguridad.Encriptar(txtnombre.Text);
+                ec.paterno =Seguridad.Encriptar(txtpaterno.Text);
+                ec.materno =Seguridad.Encriptar(txtmaterno.Text);
                 ec.nacimiento = Convert.ToDateTime(txtnacimiento.Text);
-                ec.edad = DateTime.Today.Year - ec.nacimiento.Year;
-                txtedad.Text = ec.edad.ToString(); //Convert.ToInt32(txtedad.Text);
+                ec.edad = Convert.ToInt32(txtedad.Text); 
                 ec.direccion = txtdireccion.Text;
                 ec.telefono = txttelefono.Text;
-
-                if (ec.email.Contains("@")&& ec.email.Contains(".com"))
-                {
-                    lblerror.Text = "Email valido";
-                }
-                else
-                {
-                    lblerror.Text = "Email no valido favor de escribir nuevamente";
-                }
-
                 bu.registrar(ec);
                 ScriptManager.RegisterStartupScript(btnregistrar, this.GetType(), "alert", "alert('El registro se genero correctamente');", true);
                 Response.Redirect("Login.aspx");
@@ -64,5 +54,23 @@ namespace Caisa
         {
             Response.Redirect("Login.aspx");
         }
+
+        protected void txtnacimiento_TextChanged(object sender, EventArgs e)
+        {
+            try
+            {
+                EntitiesCaisa ed = new EntitiesCaisa();
+                ed.nacimiento = Convert.ToDateTime(txtnacimiento.Text);
+                ed.edad = DateTime.Today.Year - ed.nacimiento.Year;
+                txtedad.Text = ed.edad.ToString();
+
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
+            }
+        }
+
     }
 }
